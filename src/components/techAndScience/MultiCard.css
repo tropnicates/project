@@ -1,0 +1,139 @@
+.multicard-section {
+  min-width: 100%;
+  border: 0.1rem solid #ddd;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  gap: 0.25rem;
+  height: 100%;
+  border-radius: 0.25rem;
+}
+
+.subcard-image {
+  width: 100%;
+  overflow: hidden;
+}
+
+.multicard-section .subcard-image img{
+  width: 100%;
+  height: auto;
+  border-radius: 0.3rem;
+}
+
+.multicard-section .content {
+  width: 100%;
+  background-color: #ddd;
+  padding: 0.75rem 0;
+  margin-top: -0.25rem;
+  flex-direction: column;
+}
+
+.multicard-section .content .header {
+  display: flex;
+  flex-direction: row;
+  font-size: 1.25rem;
+  padding: 0.25rem;
+}
+
+.multicard-section .para {
+  display: flex;
+  flex-direction: row;
+  font-size: 0.7rem;
+  padding: 0.25rem;
+}
+
+.multicard-section .bottom .profile .profImage {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-self: center;
+}
+
+.multicard-section .bottom{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0.25rem;
+}
+
+.multicard-section .profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0.25rem;
+}
+
+.multicard-section .bottom .profile .name {
+  flex-grow: 1;
+  margin-right: 4rem;
+}
+
+@media (max-width: 1200px) {
+  .cardSection .content .header {
+    font-size: 1.25rem;
+  }
+
+  .navbar-discover {
+    font-size: 1.5rem;
+  }
+
+  .span {
+    font-size: 0.75rem;
+  }
+
+  .nav-item {
+    padding: 8px; 
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    width: 90%; 
+  }
+
+  .navbar-nav {
+    flex-direction: column; 
+    align-items: center;
+  }
+
+  .navbar-logo img {
+    width: 30px; 
+    height: 30px;
+  }
+
+  .cardSection,
+  .multicard-section {
+    flex-direction: column; 
+    align-items: center; 
+  }
+
+  .cardSection .image,
+  .multicard-section .subcard-image {
+    height: auto; 
+  }
+
+  .cardSection .content .header,
+  .multicard-section .content .header {
+    font-size: 1.1rem; 
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-discover {
+    font-size: 1.25rem; 
+  }
+
+  .cardSection .content .header,
+  .multicard-section .content .header {
+    font-size: 1rem; 
+  }
+
+  .span {
+    font-size: 0.65rem; 
+  }
+}
