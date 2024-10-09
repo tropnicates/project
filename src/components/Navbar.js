@@ -6,6 +6,8 @@ import { CiDollar, CiMedal } from "react-icons/ci";
 import { LuPalette } from "react-icons/lu";
 import { MdOutlineComputer } from "react-icons/md";
 import { HiChevronLeft, HiChevronRight, HiOutlineAdjustmentsHorizontal } from "react-icons/hi2"; 
+import { HiMiniCpuChip} from "react-icons/hi2"
+
 
 const Navbar = () => {
   const location = useLocation(); 
@@ -37,7 +39,11 @@ const Navbar = () => {
           <div className='span'>Top</div>
         </Link>
         <Link to="/tech" className={`nav-item ${isActive('/tech') ? 'active' : ''}`}>
+        <div className='image'>
+            <HiMiniCpuChip />
+          </div>
           <div className='span'>Tech & Science</div>
+          
         </Link>
         <Link to="/finance" className={`nav-item ${isActive('/finance') ? 'active' : ''}`}>
           <div className='image'>
